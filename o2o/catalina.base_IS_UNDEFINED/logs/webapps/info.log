@@ -1,0 +1,45 @@
+2019-03-13 11:36:45.443 [main] INFO  com.dd.o2o.service.WechatAuthServiceTest - Starting WechatAuthServiceTest on LY-20170719VYRG with PID 12068 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 11:36:45.481 [main] INFO  com.dd.o2o.service.WechatAuthServiceTest - No active profile set, falling back to default profiles: default
+2019-03-13 11:36:54.316 [main] INFO  com.dd.o2o.service.WechatAuthServiceTest - Started WechatAuthServiceTest in 9.755 seconds (JVM running for 13.192)
+2019-03-13 13:43:15.680 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 10184 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 13:43:15.688 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 13:43:25.247 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 10.039 seconds (JVM running for 11.491)
+2019-03-13 13:45:46.502 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 7436 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 13:45:46.508 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 13:45:52.234 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 6.165 seconds (JVM running for 7.135)
+2019-03-13 13:48:42.009 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 8956 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 13:48:42.013 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 13:48:47.531 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 5.925 seconds (JVM running for 6.8)
+2019-03-13 16:41:05.730 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 944 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 16:41:05.738 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 16:41:11.447 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 6.144 seconds (JVM running for 7.145)
+2019-03-13 16:45:46.161 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 12460 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 16:45:46.165 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 16:45:49.144 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 3.224 seconds (JVM running for 4.922)
+2019-03-13 16:45:58.544 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 5220 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 16:45:58.549 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 16:46:04.155 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 6.006 seconds (JVM running for 7.12)
+2019-03-13 17:10:56.600 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 11640 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 17:10:56.606 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 17:11:02.959 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 6.798 seconds (JVM running for 7.919)
+2019-03-13 17:24:22.709 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 6516 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 17:24:22.714 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 17:24:28.728 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 6.531 seconds (JVM running for 7.695)
+2019-03-13 17:37:06.258 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on LY-20170719VYRG with PID 2880 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 17:37:06.263 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 17:37:11.991 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 6.15 seconds (JVM running for 7.028)
+2019-03-13 19:05:43.656 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on SKY-20180619BJL with PID 1184 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 19:05:43.685 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 19:05:46.698 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 3.266 seconds (JVM running for 4.537)
+2019-03-13 19:34:49.839 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on SKY-20180619BJL with PID 9224 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 19:34:49.851 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 19:34:55.721 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 6.776 seconds (JVM running for 7.452)
+2019-03-13 19:38:16.618 [main] INFO  com.dd.o2o.O2oApplication - Starting O2oApplication on SKY-20180619BJL with PID 7376 (started by Administrator in C:\Users\Administrator\Desktop\springboot版\o2o)
+2019-03-13 19:38:16.623 [main] INFO  com.dd.o2o.O2oApplication - No active profile set, falling back to default profiles: default
+2019-03-13 19:38:21.987 [main] INFO  com.dd.o2o.O2oApplication - Started O2oApplication in 6.313 seconds (JVM running for 6.968)
+2019-03-13 20:03:45.622 [main] INFO  com.dd.o2o.dao.AreaDaoTest - Starting AreaDaoTest on SKY-20180619BJL with PID 7180 (started by Administrator in C:\Users\Administrator\Desktop\springboot��\o2o)
+2019-03-13 20:03:45.624 [main] INFO  com.dd.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2019-03-13 20:03:51.302 [main] INFO  com.dd.o2o.dao.AreaDaoTest - Started AreaDaoTest in 6.551 seconds (JVM running for 8.978)
+2019-03-13 20:29:57.561 [main] INFO  com.dd.o2o.dao.AreaDaoTest - Starting AreaDaoTest on SKY-20180619BJL with PID 7740 (started by Administrator in C:\Users\Administrator\Desktop\springboot��\o2o)
+2019-03-13 20:29:57.614 [main] INFO  com.dd.o2o.dao.AreaDaoTest - No active profile set, falling back to default profiles: default
+2019-03-13 20:30:02.645 [main] INFO  com.dd.o2o.dao.AreaDaoTest - Started AreaDaoTest in 5.512 seconds (JVM running for 6.951)

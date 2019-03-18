@@ -1,0 +1,201 @@
+2019-03-13 11:36:45.454 [main] DEBUG com.dd.o2o.service.WechatAuthServiceTest - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 11:36:55.611 [main] DEBUG com.dd.o2o.dao.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(name,gender,email,profile_img,user_type,create_time,last_edit_time,enable_status) VALUES (?,?,?,?, ?,?,?,?) 
+2019-03-13 11:36:55.722 [main] DEBUG com.dd.o2o.dao.PersonInfoDao.insertPersonInfo - ==> Parameters: 测试一下(String), null, null, null, 1(Integer), 2019-03-13 11:36:55.235(Timestamp), null, 1(Integer)
+2019-03-13 11:36:55.754 [main] DEBUG com.dd.o2o.dao.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2019-03-13 11:36:55.767 [main] DEBUG com.dd.o2o.dao.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id,open_id,create_time) VALUES (?,?,?) 
+2019-03-13 11:36:55.777 [main] DEBUG com.dd.o2o.dao.WechatAuthDao.insertWechatAuth - ==> Parameters: 2(Long), service试一试(String), 2019-03-13 11:36:55.235(Timestamp)
+2019-03-13 11:36:55.781 [main] DEBUG com.dd.o2o.dao.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2019-03-13 11:36:55.797 [main] DEBUG c.dd.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ? 
+2019-03-13 11:36:55.799 [main] DEBUG c.dd.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: service试一试(String)
+2019-03-13 11:36:55.828 [main] DEBUG c.dd.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 1
+2019-03-13 13:43:15.686 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 13:44:04.197 [http-nio-8080-exec-1] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id,shop_category_name,shop_category_desc,shop_category_img,priority,create_time,last_edit_time,parent_id from tb_shop_category WHERE parent_id is null order by priority desc 
+2019-03-13 13:44:04.304 [http-nio-8080-exec-1] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2019-03-13 13:44:04.332 [http-nio-8080-exec-1] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 6
+2019-03-13 13:44:04.377 [http-nio-8080-exec-1] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - ==>  Preparing: SELECT line_id, line_name, line_link, line_img, priority, enable_status, create_time, last_edit_time FROM tb_head_line WHERE enable_status = ? ORDER BY priority DESC 
+2019-03-13 13:44:04.379 [http-nio-8080-exec-1] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - ==> Parameters: 1(Integer)
+2019-03-13 13:44:04.382 [http-nio-8080-exec-1] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - <==      Total: 4
+2019-03-13 13:45:46.507 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 13:48:42.012 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 13:49:26.213 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 13:49:26.248 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 0(Integer), 100(Integer)
+2019-03-13 13:49:26.281 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 1
+2019-03-13 13:49:26.295 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 13:49:26.296 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 
+2019-03-13 13:49:26.299 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 16:41:05.737 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 16:41:35.290 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 16:41:35.324 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 0(Integer), 100(Integer)
+2019-03-13 16:41:35.350 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 1
+2019-03-13 16:41:35.368 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 16:41:35.369 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 
+2019-03-13 16:41:35.371 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 16:41:37.084 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id,shop_category_name,shop_category_desc,shop_category_img,priority,create_time,last_edit_time,parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2019-03-13 16:41:37.087 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2019-03-13 16:41:37.092 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 2
+2019-03-13 16:41:37.093 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority desc 
+2019-03-13 16:41:37.094 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2019-03-13 16:41:37.100 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2019-03-13 16:45:46.165 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 16:45:58.548 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 17:10:56.605 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 17:11:13.121 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id,shop_category_name,shop_category_desc,shop_category_img,priority,create_time,last_edit_time,parent_id from tb_shop_category WHERE parent_id is null order by priority desc 
+2019-03-13 17:11:13.182 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2019-03-13 17:11:13.210 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 6
+2019-03-13 17:11:13.235 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - ==>  Preparing: SELECT line_id, line_name, line_link, line_img, priority, enable_status, create_time, last_edit_time FROM tb_head_line WHERE enable_status = ? ORDER BY priority DESC 
+2019-03-13 17:11:13.236 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - ==> Parameters: 1(Integer)
+2019-03-13 17:11:13.240 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - <==      Total: 4
+2019-03-13 17:24:22.713 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 17:24:34.730 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id,shop_category_name,shop_category_desc,shop_category_img,priority,create_time,last_edit_time,parent_id from tb_shop_category WHERE parent_id is null order by priority desc 
+2019-03-13 17:24:34.790 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2019-03-13 17:24:34.814 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 6
+2019-03-13 17:24:34.841 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - ==>  Preparing: SELECT line_id, line_name, line_link, line_img, priority, enable_status, create_time, last_edit_time FROM tb_head_line WHERE enable_status = ? ORDER BY priority DESC 
+2019-03-13 17:24:34.842 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - ==> Parameters: 1(Integer)
+2019-03-13 17:24:34.846 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.HeadLineDao.queryHeadLine - <==      Total: 4
+2019-03-13 17:25:01.165 [http-nio-8080-exec-9] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-03-13 17:25:01.166 [http-nio-8080-exec-9] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: tom(String), 5qs252q9e60q59666b6s5y65562yy562(String)
+2019-03-13 17:25:01.170 [http-nio-8080-exec-9] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2019-03-13 17:25:01.355 [http-nio-8080-exec-2] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 17:25:01.356 [http-nio-8080-exec-2] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2019-03-13 17:25:01.365 [http-nio-8080-exec-2] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 1
+2019-03-13 17:25:01.367 [http-nio-8080-exec-2] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 17:25:01.368 [http-nio-8080-exec-2] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-03-13 17:25:01.370 [http-nio-8080-exec-2] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 17:37:06.262 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 17:37:31.688 [http-nio-8080-exec-4] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-03-13 17:37:31.730 [http-nio-8080-exec-4] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: tom(String), 5qs252q9e60q59666b6s5y65562yy562(String)
+2019-03-13 17:37:31.754 [http-nio-8080-exec-4] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2019-03-13 17:37:32.098 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 17:37:32.101 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2019-03-13 17:37:32.108 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 1
+2019-03-13 17:37:32.115 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 17:37:32.116 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-03-13 17:37:32.119 [http-nio-8080-exec-6] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 19:05:43.668 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 19:06:47.010 [http-nio-8080-exec-2] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-03-13 19:06:47.037 [http-nio-8080-exec-2] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: tom(String), 5qs252q9e60q59666b6s5y65562yy562(String)
+2019-03-13 19:06:47.118 [http-nio-8080-exec-2] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2019-03-13 19:06:47.765 [http-nio-8080-exec-7] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 19:06:47.766 [http-nio-8080-exec-7] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2019-03-13 19:06:47.942 [http-nio-8080-exec-7] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 1
+2019-03-13 19:06:47.943 [http-nio-8080-exec-7] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 19:06:47.944 [http-nio-8080-exec-7] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-03-13 19:06:48.084 [http-nio-8080-exec-7] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 19:06:54.799 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id,shop_category_name,shop_category_desc,shop_category_img,priority,create_time,last_edit_time,parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2019-03-13 19:06:54.799 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2019-03-13 19:06:54.803 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 2
+2019-03-13 19:06:54.803 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority desc 
+2019-03-13 19:06:54.804 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2019-03-13 19:06:54.805 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2019-03-13 19:08:00.208 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopDao.insertShop - ==>  Preparing: INSERT INTO tb_shop(owner_id,area_id,shop_category_id, shop_name,shop_desc,shop_addr,phone,shop_img, priority,create_time,last_edit_time, enable_status,advice) VALUES (?,?,?, ?,?,?,?,?,?, ?,?, ?,?) 
+2019-03-13 19:08:00.210 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopDao.insertShop - ==> Parameters: 1(Long), 1(Integer), 9(Long), 为了编辑商品(String), 就是为了编辑商品(String), 南五(String), 15684175372(String), null, null, 2019-03-13 19:08:00.206(Timestamp), 2019-03-13 19:08:00.206(Timestamp), 0(Integer), null
+2019-03-13 19:08:00.711 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopDao.insertShop - <==    Updates: 1
+2019-03-13 19:08:01.371 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopDao.updateShop - ==>  Preparing: update tb_shop SET shop_name=?, shop_desc=?, shop_addr=?, phone=?, shop_img=?, last_edit_time=?, enable_status=?, area_id=?, shop_category_id=? where shop_id=? 
+2019-03-13 19:08:01.372 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopDao.updateShop - ==> Parameters: 为了编辑商品(String), 就是为了编辑商品(String), 南五(String), 15684175372(String), \upload\item\shop\2\2019031319080071487.gif(String), 2019-03-13 19:08:00.206(Timestamp), 0(Integer), 1(Integer), 9(Long), 2(Long)
+2019-03-13 19:08:01.518 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopDao.updateShop - <==    Updates: 1
+2019-03-13 19:08:07.677 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 19:08:07.678 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2019-03-13 19:08:07.682 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-03-13 19:08:07.683 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 19:08:07.683 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-03-13 19:08:07.686 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 19:08:34.300 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 19:08:34.300 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2019-03-13 19:08:34.303 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-03-13 19:08:34.304 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 19:08:34.304 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-03-13 19:08:34.305 [http-nio-8080-exec-10] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 19:13:43.759 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 19:13:43.759 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2019-03-13 19:13:43.764 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-03-13 19:13:43.766 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 19:13:43.767 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-03-13 19:13:43.768 [http-nio-8080-exec-4] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 19:13:46.427 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==>  Preparing: select shop_category_id,shop_category_name,shop_category_desc,shop_category_img,priority,create_time,last_edit_time,parent_id from tb_shop_category WHERE parent_id is not null order by priority desc 
+2019-03-13 19:13:46.428 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - ==> Parameters: 
+2019-03-13 19:13:46.429 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ShopCategoryDao.queryShopCategory - <==      Total: 2
+2019-03-13 19:13:46.430 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority desc 
+2019-03-13 19:13:46.430 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2019-03-13 19:13:46.431 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2019-03-13 19:34:49.850 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 19:38:16.622 [main] DEBUG com.dd.o2o.O2oApplication - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 19:38:44.103 [http-nio-8080-exec-7] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==>  Preparing: SELECT l.local_auth_id, l.username, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.username = ? AND l.password = ? 
+2019-03-13 19:38:44.147 [http-nio-8080-exec-7] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - ==> Parameters: tom(String), 5qs252q9e60q59666b6s5y65562yy562(String)
+2019-03-13 19:38:44.202 [http-nio-8080-exec-7] DEBUG c.d.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd - <==      Total: 1
+2019-03-13 19:38:44.598 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 19:38:44.599 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2019-03-13 19:38:44.614 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-03-13 19:38:44.615 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 19:38:44.616 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-03-13 19:38:44.620 [http-nio-8080-exec-5] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 19:39:02.367 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, point, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2019-03-13 19:39:02.368 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 9999(Integer)
+2019-03-13 19:39:02.513 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - <==      Total: 0
+2019-03-13 19:39:02.514 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2019-03-13 19:39:02.515 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 2(Long)
+2019-03-13 19:39:02.562 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2019-03-13 19:39:04.979 [http-nio-8080-exec-5] DEBUG c.d.o.d.P.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id=? order by priority desc 
+2019-03-13 19:39:04.980 [http-nio-8080-exec-5] DEBUG c.d.o.d.P.queryProductCategoryList - ==> Parameters: 2(Long)
+2019-03-13 19:39:04.982 [http-nio-8080-exec-5] DEBUG c.d.o.d.P.queryProductCategoryList - <==      Total: 0
+2019-03-13 19:42:03.346 [http-nio-8080-exec-9] DEBUG c.d.o.d.P.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id=? order by priority desc 
+2019-03-13 19:42:03.347 [http-nio-8080-exec-9] DEBUG c.d.o.d.P.queryProductCategoryList - ==> Parameters: 2(Long)
+2019-03-13 19:42:03.348 [http-nio-8080-exec-9] DEBUG c.d.o.d.P.queryProductCategoryList - <==      Total: 0
+2019-03-13 19:42:25.223 [http-nio-8080-exec-6] DEBUG c.d.o.d.P.batchInsertProductCategory - ==>  Preparing: insert into tb_product_category(product_category_name,priority,create_time,shop_id) values ( ?, ?, ?, ? ) 
+2019-03-13 19:42:25.224 [http-nio-8080-exec-6] DEBUG c.d.o.d.P.batchInsertProductCategory - ==> Parameters: 试试1(String), 3(Integer), null, 2(Long)
+2019-03-13 19:42:25.247 [http-nio-8080-exec-6] DEBUG c.d.o.d.P.batchInsertProductCategory - <==    Updates: 1
+2019-03-13 19:42:25.290 [http-nio-8080-exec-5] DEBUG c.d.o.d.P.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id=? order by priority desc 
+2019-03-13 19:42:25.290 [http-nio-8080-exec-5] DEBUG c.d.o.d.P.queryProductCategoryList - ==> Parameters: 2(Long)
+2019-03-13 19:42:25.305 [http-nio-8080-exec-5] DEBUG c.d.o.d.P.queryProductCategoryList - <==      Total: 1
+2019-03-13 19:42:34.518 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, point, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2019-03-13 19:42:34.519 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 9999(Integer)
+2019-03-13 19:42:34.520 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - <==      Total: 0
+2019-03-13 19:42:34.520 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2019-03-13 19:42:34.521 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 2(Long)
+2019-03-13 19:42:34.525 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2019-03-13 19:42:36.131 [http-nio-8080-exec-1] DEBUG c.d.o.d.P.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id=? order by priority desc 
+2019-03-13 19:42:36.132 [http-nio-8080-exec-1] DEBUG c.d.o.d.P.queryProductCategoryList - ==> Parameters: 2(Long)
+2019-03-13 19:42:36.134 [http-nio-8080-exec-1] DEBUG c.d.o.d.P.queryProductCategoryList - <==      Total: 1
+2019-03-13 19:43:23.083 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,point,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?,?, ?) 
+2019-03-13 19:43:23.086 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.insertProduct - ==> Parameters: 试试啊(String), 就试试(String), \upload\item\shop\2\2019031319432234895.png(String), 20(String), 10(String), 3(Integer), 2019-03-13 19:43:22.952(Timestamp), 2019-03-13 19:43:22.952(Timestamp), 1(Integer), 30(Integer), 1(Long), 2(Long)
+2019-03-13 19:43:23.124 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2019-03-13 19:43:23.171 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_addr,img_desc,priority, create_time,product_id) VALUES ( ?, ?, ?, ?, ? ) 
+2019-03-13 19:43:23.172 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: \upload\item\shop\2\2019031319432320782.png(String), null, null, 2019-03-13 19:43:23.171(Timestamp), 1(Long)
+2019-03-13 19:43:23.211 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 1
+2019-03-13 19:43:25.194 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, point, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2019-03-13 19:43:25.195 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 9999(Integer)
+2019-03-13 19:43:25.201 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - <==      Total: 1
+2019-03-13 19:43:25.205 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2019-03-13 19:43:25.207 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 2(Long)
+2019-03-13 19:43:25.208 [http-nio-8080-exec-8] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2019-03-13 19:43:30.079 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==>  Preparing: select s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id order by s.priority desc limit ?,? 
+2019-03-13 19:43:30.080 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - ==> Parameters: 1(Long), 0(Integer), 100(Integer)
+2019-03-13 19:43:30.085 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ShopDao.queryShopList - <==      Total: 2
+2019-03-13 19:43:30.086 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==>  Preparing: select count(1) from tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id=? and s.area_id=a.area_id and s.shop_category_id=sc.shop_category_id 
+2019-03-13 19:43:30.087 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - ==> Parameters: 1(Long)
+2019-03-13 19:43:30.088 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ShopDao.queryShopCount - <==      Total: 1
+2019-03-13 19:43:37.309 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - ==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, point, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2019-03-13 19:43:37.311 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - ==> Parameters: 2(Long), 0(Integer), 9999(Integer)
+2019-03-13 19:43:37.314 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductList - <==      Total: 1
+2019-03-13 19:43:37.315 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - ==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2019-03-13 19:43:37.316 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - ==> Parameters: 2(Long)
+2019-03-13 19:43:37.316 [http-nio-8080-exec-3] DEBUG com.dd.o2o.dao.ProductDao.queryProductCount - <==      Total: 1
+2019-03-13 19:43:41.687 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductById - ==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.point, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr as detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id = pm.product_id WHERE p.product_id = ? ORDER BY pm.priority DESC 
+2019-03-13 19:43:41.688 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductById - ==> Parameters: 1(Long)
+2019-03-13 19:43:41.705 [http-nio-8080-exec-9] DEBUG com.dd.o2o.dao.ProductDao.queryProductById - <==      Total: 1
+2019-03-13 19:43:41.707 [http-nio-8080-exec-9] DEBUG c.d.o.d.P.queryProductCategoryList - ==>  Preparing: select product_category_id, product_category_name, priority, create_time, shop_id from tb_product_category where shop_id=? order by priority desc 
+2019-03-13 19:43:41.707 [http-nio-8080-exec-9] DEBUG c.d.o.d.P.queryProductCategoryList - ==> Parameters: 2(Long)
+2019-03-13 19:43:41.708 [http-nio-8080-exec-9] DEBUG c.d.o.d.P.queryProductCategoryList - <==      Total: 1
+2019-03-13 20:03:45.623 [main] DEBUG com.dd.o2o.dao.AreaDaoTest - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
+2019-03-13 20:03:52.132 [main] DEBUG com.dd.o2o.dao.AreaDao.queryArea - ==>  Preparing: select area_id,area_name,priority,create_time,last_edit_time from tb_area order by priority desc 
+2019-03-13 20:03:52.159 [main] DEBUG com.dd.o2o.dao.AreaDao.queryArea - ==> Parameters: 
+2019-03-13 20:03:52.178 [main] DEBUG com.dd.o2o.dao.AreaDao.queryArea - <==      Total: 2
+2019-03-13 20:03:52.472 [main] DEBUG com.dd.o2o.dao.PersonInfoDao.insertPersonInfo - ==>  Preparing: INSERT INTO tb_person_info(name,gender,email,profile_img,user_type,create_time,last_edit_time,enable_status) VALUES (?,?,?,?, ?,?,?,?) 
+2019-03-13 20:03:52.477 [main] DEBUG com.dd.o2o.dao.PersonInfoDao.insertPersonInfo - ==> Parameters: ����һ��(String), null, null, null, 1(Integer), 2019-03-13 20:03:52.46(Timestamp), null, 1(Integer)
+2019-03-13 20:03:52.490 [main] DEBUG com.dd.o2o.dao.PersonInfoDao.insertPersonInfo - <==    Updates: 1
+2019-03-13 20:03:52.491 [main] DEBUG com.dd.o2o.dao.WechatAuthDao.insertWechatAuth - ==>  Preparing: INSERT INTO tb_wechat_auth(user_id,open_id,create_time) VALUES (?,?,?) 
+2019-03-13 20:03:52.507 [main] DEBUG com.dd.o2o.dao.WechatAuthDao.insertWechatAuth - ==> Parameters: 2(Long), service��һ��(String), 2019-03-13 20:03:52.46(Timestamp)
+2019-03-13 20:03:52.552 [main] DEBUG com.dd.o2o.dao.WechatAuthDao.insertWechatAuth - <==    Updates: 1
+2019-03-13 20:03:52.610 [main] DEBUG c.dd.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==>  Preparing: SELECT w.wechat_auth_id, w.open_id, w.create_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_wechat_auth w LEFT JOIN tb_person_info p ON w.user_id = p.user_id WHERE w.open_id = ? 
+2019-03-13 20:03:52.611 [main] DEBUG c.dd.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - ==> Parameters: service��һ��(String)
+2019-03-13 20:03:52.614 [main] DEBUG c.dd.o2o.dao.WechatAuthDao.queryWechatInfoByOpenId - <==      Total: 1
+2019-03-13 20:29:57.599 [main] DEBUG com.dd.o2o.dao.AreaDaoTest - Running with Spring Boot v1.5.8.RELEASE, Spring v4.3.12.RELEASE
